@@ -4,7 +4,7 @@ url_opener = urllib.URLopener()
 
 path = "E:\[My Folder]\Private\Dropbox\GOALTIME\\"
 ttv_list = "http://super-pomoyka.us.to/trash/ttv-list/"
-allfon_list = "https://allfon.tv/autogenplaylist/"
+allfon_list = "https://allfon.org/autogenplaylist/"
 playlists = [
     "ttv.m3u",
     "ttv.sport.player.m3u"
@@ -33,7 +33,7 @@ hdr = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML,
        'Accept-Language': 'pl-PL,pl;q=0.8',
        'Connection': 'keep-alive'}
 
-req = urllib2.Request("https://allfon.tv/autogenplaylist/allfontv.m3u", headers=hdr)
+req = urllib2.Request("https://allfon.org/autogenplaylist/allfontv.m3u", headers=hdr)
 
 try:
     page = urllib2.urlopen(req,context=context)
